@@ -12,10 +12,10 @@ Utilise les libraires et modules suivants :
 
 Fonctionnement :
 * Envoie une requête URL vers la page https://www.ter.sncf.com/normandie/se-deplacer/info-trafic/ponctualite
-* Crée un dossier EXTRACTION SNCF si besoin est
+* Crée un dossier EXTRACTION SNCF (si besoin est, sinon utilise le dossier ayant déja le nom EXTRACTION SNCF)
 * Liste les URL des fichiers pour les stocker dans un .txt
-* Sors tous les URL en balise <a> sur l'URL "ter.sncf.com"
+* Scan tous les URL en balise <a> sur l'URL "ter.sncf.com"
 * Vérifie si l'URL a déja été téléchargée
 * * Si oui : ne charge pas le PDF
 * * Si non : charge le PDF
-* Mets à jour la liste (.txt) des fichiers chargés
+* MàJ la liste (.txt) des fichiers chargés
